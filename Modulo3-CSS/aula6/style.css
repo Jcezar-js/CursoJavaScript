@@ -1,0 +1,19 @@
+/* Documentação w3School */
+body {
+    background: #dfdfdf;
+}
+
+p{
+    color: #222222;
+}
+
+.foto-principal{
+    width:200px;
+
+    border: 2px solid #FFFFFF; /* Shorthand*/
+    border-radius: 0% 50% 0% 50%;
+/* Se deixar somente um valor na tag "margin" ou "padding" esse valor se aplicará para todos os lados do conteúdo*/
+    margin: 30px;
+
+    padding: 5px;
+}

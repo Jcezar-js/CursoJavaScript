@@ -1,0 +1,12 @@
+body{
+    background: url(https://media.gettyimages.com/videos/snow-background-loopable-video-id1074633704?s=640x640);
+}
+ul{
+    background: gray;
+    padding: 20px;
+    opacity: 0.5;
+}
+ul li{
+    display: inline;
+    margin: 20px;
+}

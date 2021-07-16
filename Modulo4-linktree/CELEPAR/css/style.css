@@ -1,0 +1,81 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: rgb(21,127,201);
+    background: linear-gradient(167deg, rgba(21,127,201,1) 26%, rgba(92,40,98,1) 61%);
+}
+
+.avatar{
+    width: 100px;
+    border-radius: 30px;
+    border: 3px solid white;
+    box-shadow: 0 0 20px white;
+}
+h1{
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+h2{
+    font-size: 16px;
+}
+.profile{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 20px 0;
+}
+
+.social img{
+    width: 33px;
+}
+
+.listaLinks{
+    list-style: none;
+}
+
+.listaLinks li{
+    margin: 10px 20px;
+}
+
+.listaLinks li a{
+    display: block;
+    background-color: white;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.listaLinks li a span{
+    color: grey;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.listaLinks li a.active {
+    box-shadow: 0 0 20px white;
+    color: rgb(54,77,204);
+}
+
+.listaLinks.second {
+    margin-top: 30px;
+}

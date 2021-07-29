@@ -41,30 +41,46 @@ body {
 .menu {
   display: flex;
 }
-
-.menu li{
-    position: relative;
+/* Criação e estilização do dropdown */
+.menu > li {
+  position: relative;
 }
 
-.menu li a {
+.menu > li a {
   padding: 17px;
   color: white;
   font-size: 14px;
   text-decoration: none;
+  display: block;
 }
 
-.menu li a:hover {
+.menu > li:hover {
   background: #1d52ff;
 }
 
-.menu li:hover .submenu{
+.menu > li:hover > .submenu, 
+.submenu > li:hover > .submenu {
     display: block;
 }
 
-.submenu{
-    display: none;
-    position: absolute;
-    top: 34px;
-    left: 0;
-    background: #1d52ff;
+.submenu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background: #3276fb;
+  min-width: 110%;
+}
+
+.submenu li:hover {
+  background: #174fbe;
+}
+
+.submenu li{
+    position: relative;
+}
+
+.submenu li .submenu{
+    top: 0;
+    left: 100%;
 }

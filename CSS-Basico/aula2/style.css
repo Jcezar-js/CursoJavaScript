@@ -1,0 +1,9 @@
+/* Rgba o atributo "a" significa transparência */
+/* HEXADECIMAL - FF-R FF-G FF-B não pode ter transparência */
+body {
+    background: #dfdfdf;
+}
+/* Se quiser converter de hexa para rgb, é só usar um conversor online */
+p{
+    color: #222222;
+}

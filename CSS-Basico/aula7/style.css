@@ -1,0 +1,33 @@
+/* Documentação w3School */
+body {
+    background: #dfdfdf;
+}
+/* Formatação do texto */
+p{
+    color: #222222;
+}
+h2{
+    margin-bottom: 0;
+}
+
+p{
+    margin-top: 5px;
+}
+
+.footer{
+    border-top: 2px solid #47474741;
+    margin-bottom: 0;
+}
+
+/* Estilização foto: */
+.foto-principal{
+    width:200px;
+
+    border: 2px solid #FFFFFF; /* Shorthand*/
+    border-radius: 0% 50% 0% 50%;
+/* Se deixar somente um valor na tag "margin" ou "padding" esse valor se aplicará para todos os lados do conteúdo*/
+    margin: 30px;
+    box-shadow: 0px 0px 10px #959595;
+    padding: 5px;
+}
+

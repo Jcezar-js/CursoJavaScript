@@ -1,0 +1,40 @@
+body {
+    margin: 100px;
+}
+
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+
+    animation-name: animacaoExemplo;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 2000ms;
+    animation-timing-function: ease-in;
+    animation-direction: reverse;
+}
+
+@keyframes animacaoExemplo {
+    0% {
+        background-color: black;
+        border: 0px solid green;
+        box-shadow: 0 0 0px black;
+    }
+
+    33%{
+        transform:translate(50px, 100px);
+    }
+
+    50%{
+        border: 25px solid green;
+        box-shadow: 0 0 120px black;
+    }
+
+    100% {
+        box-shadow: 0 0 0px black;
+        border: 0px solid green;
+        background-color: red;
+
+    }
+}

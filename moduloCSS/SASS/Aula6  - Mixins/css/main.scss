@@ -1,0 +1,53 @@
+
+@import'variables';
+@import'base';
+@import 'mixins';
+
+
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+    .box{
+        width: 22%;
+        color: $color-primary;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+
+        //elemento irmão
+        &.active{
+            background: $color-secondary;
+        }
+
+        h2{
+            font-size: 22px;
+            margin: 10px 20px 30px 22px;
+        }
+
+        p{
+            font-size: 18px;
+
+            &.hidden{
+                display: none;
+            }
+        }
+// Exemplo mixin com parâmetro
+        ul{
+            @include reset-list();
+        }
+
+        a{
+            color: green;
+
+            &:hover{
+                color: yellow;
+
+                & + p.hidden{
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+
+@import'variables';
+@import'base';
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+    .box{
+        width: 30%;
+        color: $color-primary;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+
+        //elemento irmão
+        &.active{
+            background: $color-secondary;
+        }
+
+        h2{
+            font-size: 22px;
+            margin: 10px 20px 30px 22px;
+        }
+
+        p{
+            font-size: 18px;
+
+            &.hidden{
+                display: none;
+            }
+        }
+
+        a{
+            color: green;
+
+            &:hover{
+                color: yellow;
+
+                & + p.hidden{
+                    display: block;
+                }
+            }
+        }
+    }
+}

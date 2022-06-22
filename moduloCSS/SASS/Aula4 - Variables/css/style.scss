@@ -1,0 +1,62 @@
+// variáveis
+$color-primary:black;
+$color-secondary:red;
+
+$font-primary:'Arial', sans-serif;
+$font-secondary:'Verdana', sans-serif;
+
+$margin-containers: 20px 30px 12px 44px;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: $color-primary;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+    .box{
+        width: 30%;
+        color: $color-primary;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+
+        //elemento irmão
+        &.active{
+            background: $color-secondary;
+        }
+
+        h2{
+            font-size: 22px;
+            margin: 10px 20px 30px 22px;
+        }
+
+        p{
+            font-size: 18px;
+
+            &.hidden{
+                display: none;
+            }
+        }
+
+        a{
+            color: green;
+
+            &:hover{
+                color: yellow;
+
+                & + p.hidden{
+                    display: block;
+                }
+            }
+        }
+    }
+}

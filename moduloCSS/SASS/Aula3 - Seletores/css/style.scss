@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+
+//elemento pai
+.container{
+    display: flex;
+    justify-content: space-around;
+
+    //elemento filho
+    .box{
+        width: 30%;
+        color: black;
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+
+        //elemento irmão (E comercial "&")
+        &.active{
+            background: red;
+        }
+
+        h2{
+            font-size: {
+             size: 30px;   
+             font-weight: 500;
+            }
+
+            margin: {
+                top: 10px;
+                left: 20px;
+                right: 40px;
+                bottom: 22px;
+            }
+        }
+
+        p{
+            font-size: 18px;
+
+            &.hidden{
+                display: none;
+            }
+        }
+
+        a{
+            color: green;
+
+            &:hover{
+                color: yellow;
+
+                & + p.hidden{
+                    display: block;
+                }
+            }
+        }
+    }
+}

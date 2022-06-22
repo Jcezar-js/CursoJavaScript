@@ -1,0 +1,31 @@
+Aula 1 - Intro
+- SAAS funciona somente para o ambiente de desenvolvimento, não é interpretado pelo navegador
+- serve para organizar melhor os conceitos de hierarquia. 
+- Para criar arquivos Sass precisa adicionar um "s"na frente do "css" na extensão do arquivo
+
+Aula 2 - configuração e instalação
+- Ao instalar a extensão "Watch sass" e rodar, serão criados dois arquivos, um para que o navegador entenda a escrita do scss e outro arquivo para controle da extensão.
+- No HTML importa-se o arquivo .css mas as alterações serão realizadas no arquivo .scss
+
+Aula 3 - SELETORES
+- Para indicar um elemento irmão colocamos um "&" antes do nome
+- Para chamar um elemento irmão colocamos um "& +" antes do nome
+
+Aula 4 - VARIÁVEIS
+- Não precisa declarar no root, apenas coloque $NomeDaVariável
+- PaRA utilizar Não precisa do "var" é só colocar $NomeDaVariável
+
+Aula 5 - Partials
+- Podemos separar as variáveis e configurações da página em arquivos separados
+- Para criar esses arquivos colocamos um underline por exemplo "_base.scss" para mostrar ao sass que esse arquivo só sera compilado caso seja chamado em uma página de estilos, utilizando o formato:
+@import 'base';
+
+Aula 6 - Mixins
+
+- Mixins comportam-se como uma função. Ao digitar @mixin nomeFunção{ função } quando eu colocar @include nomeFunção; em algum item do scss ele irá efetuar os comandos escritos na função! 
+- Aceita parâmetros conforme exemplo da lista 
+
+Aula 7 - Condicionais
+
+-Extends: Serve para "extender" um estilo, como exemplo o <span class="success"> da aula7
+-É possível trabalhar com else if dentro dos mixins como mostra a página de mixins da aula 7

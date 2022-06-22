@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+.container .box {
+  width: 30%;
+  color: black;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+}
+.container .box.active {
+  background: red;
+}
+.container .box h2 {
+  font-size-size: 30px;
+  font-size-font-weight: 500;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-bottom: 22px;
+}
+.container .box p {
+  font-size: 18px;
+}
+.container .box p.hidden {
+  display: none;
+}
+.container .box a {
+  color: green;
+}
+.container .box a:hover {
+  color: yellow;
+}
+.container .box a:hover + p.hidden {
+  display: block;
+}/*# sourceMappingURL=style.css.map */

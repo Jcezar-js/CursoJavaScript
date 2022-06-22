@@ -1,0 +1,88 @@
+Aula 1 - DOM
+-Javascript no client (Navegador)
+-Document object model (DOM)
+-Dom é um acrônimo para Document Object Model ele representa os objetos de uma página de HTML em forma de uma árvore. O DOM é importante, pois é através dele que acessamos os elementos dentro de uma página HTML.
+===========================================================================================================
+Aula 2 - Tag Script, Outputs
+-querySelector - Procura um elemento por ID no HTML
+-innerHTML - Altera o conteúdo dentro do html
+formato: document.querySelector('#ID').innerHTML = "Alteração"
+===========================================================================================================
+Aula3 - Document, Onclick
+-onclick faz executar um código em javascript somente quando um evento de click ocorrrer
+o formato fica; 
+Ex: <button onclick="document.querySelector('#ID').src = 'novocaminhodocumento.gif'">Evento</button>
+-neste exemplo esse botão irá procurar um ID e irá alterar o SRC do documento. 
+===========================================================================================================
+Aula4 - Script Externo
+- Não se coloca a importação do arquivo JS na tag HEAD e sim no final do documento, dentro do Body, pois caso seja importado no HEAD a página irá travar no script e só carregará após o js todo ser carregado e caso tenha alguma ação bloqueante, a página ficará em branco. 
+
+É de boa prática colocar a importação do JS no final do Body
+===========================================================================================================
+Aula 5 - Statements
+- O ";" tornou-se opcional.
+-Um programa JavaScript é uma lista de instruções para a programação.
+-Cada linha de código JS é um Statement (Instrução)
+-Valores, operadores, expressões, palavras-chave e comentários
+
+Palavras reservadas(Não utiliza-se, pois dentro da linguagem já tem seu uso): 
+
+break
+continue
+debbuger
+do ..while
+for
+function
+if
+return
+switch
+try
+var
+let
+const
+===========================================================================================================
+Aula 6 - Variáveis
+Temos 3 opções
+Var, let e const
+
+Var está caindo em desuso devido a alguns bugs, por isso normalmente utilizaremos let ou const
+
+Para declarar uma variável, obrigatóriamente preciso colocar o "let" na frente, o formato fica assim:
+
+  let variável = valorVariável ou 'valorVariável'
+
+OBS: utiliza-se aspas para string, sem aspas vira Number
+
+Para mudar o valor de uma variável o formato fica assim:
+
+  let variável = nomeVariavel
+
+  variável = nomeAlterado_variavel
+
+No caso de "const" não pode ter o valor alterado, somente em caso de let
+
+===========================================================================================================
+
+Aula 7 - Tipos de dados
+
+String
+são dados que contém letras, precisam ser declarados entre ''
+
+Number
+São dados numéricos, são declarados sem '' para que possam ser utilizados como operadores
+
+Boolean
+São dados de true ou False
+
+Array
+Podem armazenar vários tipos de dados
+
+Object
+Podem armazenar vários tipos de dados em formato Json (mais detalhado)
+
+Undefined
+Variável declarada, porém não definida
+
+Null
+Variável declarada, porém definida como nula
+

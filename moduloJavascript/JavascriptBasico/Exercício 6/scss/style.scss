@@ -1,0 +1,18 @@
+.container{
+  display: flex;
+  font-family: sans-serif;
+
+
+  .box{
+    width: 20%;
+    height: 200px;
+    background-color: rgb(170, 167, 167);
+
+    margin: 50px;
+
+    box-shadow: 5px 5px 10px #000000;
+
+    border-radius: 10px;
+    padding: 20px;
+  }
+}

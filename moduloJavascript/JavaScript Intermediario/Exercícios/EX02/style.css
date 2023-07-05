@@ -1,0 +1,32 @@
+.counter{
+    font-size: 25px;
+    align-items: center;
+    margin-left: 30px
+}
+
+.buttons{
+    margin-top: 2px;
+    margin-left: 12.5px;
+}
+
+#btn-increase{
+    padding: 10px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.active-green{
+    background: green;
+}
+
+#btn-decrease{
+    padding: 10px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.active-red{
+    background-color: rgb(153, 4, 4);
+    border: 1px, solid, black;
+    color: white;
+}
